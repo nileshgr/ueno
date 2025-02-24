@@ -1,25 +1,25 @@
 name: Android Staging Debug APK (with params)
 
-  #on:
-  #  workflow_dispatch:
-  #    inputs:
-  #      versionName:
-  #        description: 'User-facing release version name'
-  #        required: true
-  #        default: "1.0.0"
-  #      versionCode:
-  #        description: 'versionCode or build number'
-  #        required: true
-  #        default: '1'
-  #      parameter_1:
-  #        desciption: 'just a test parameter'
-  #        required: true
-  #      parameter_2:
-  #        desciption: 'just a test parameter2'
-  #        required: true
+on:
+  workflow_dispatch:
+    inputs:
+      versionName:
+        description: 'User-facing release version name'
+        required: true
+        default: "1.0.0"
+      versionCode:
+        description: 'versionCode or build number'
+        required: true
+        default: '1'
+      parameter_1:
+        desciption: 'just a test parameter'
+        required: true
+      parameter_2:
+        desciption: 'just a test parameter2'
+        required: true
 
 jobs:
-  build:
+build:
     runs-on: ubuntu-latest
 
     steps:
