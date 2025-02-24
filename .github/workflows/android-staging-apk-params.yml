@@ -13,13 +13,13 @@ on:
         default: '1'
       parameter_1:
         desciption: 'just a test parameter'
-        required: true
+        required: false
       parameter_2:
         desciption: 'just a test parameter2'
-        required: true
+        required: false
 
 jobs:
-build:
+ build:
     runs-on: ubuntu-latest
 
     steps:
